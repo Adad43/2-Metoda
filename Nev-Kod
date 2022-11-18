@@ -9,9 +9,13 @@ namespace _2_Разных_метода
         {
             Person tom = new Person();
 
-            tom.name = "Том";
+            tom.name1 = "Татари";
+            tom.name2 = "Том";
+            tom.name3 = "Батуин";
             tom.age = 80;
             tom.rabota = "Курьер";
+            tom.poh = "gwrdw@yandex.ru";
+            tom.MG = "г.Москва Ул.Пушкина д.Колотушкино кв.299";
             tom.GetInfo();
 
             void H1()
@@ -53,12 +57,16 @@ namespace _2_Разных_метода
     }
     class Person
     {
-        public string name;
+        public string name1;
+        public string name2;
+        public string name3;
         public int age;
         public string rabota;
+        public string poh;
+        public string MG;
         public void GetInfo()
         {
-            Console.WriteLine($"Имя: {name}; Возраст: {age}; Работа: {rabota};");
+            Console.WriteLine($"Персональные данные: Фамилия: {name1}, Имя: {name2}, Отчество: {name3}, Возраст: {age}; Работа: {rabota}; Почта: {poh}; Место проживания: {MG};");
         }
     }
 }
